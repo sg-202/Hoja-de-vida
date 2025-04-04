@@ -1,0 +1,167 @@
+body {
+    font-family: 'Times New Roman';
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f7f8;/* fondo*/
+}
+h1,h2,h3 {
+    text-align: center; /* Centra el texto de todo el cuerpo */    
+ }
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: rgb(240, 215, 215);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(246, 244, 244); /* configuracion de cuadro*/
+}
+h2 {
+    border-bottom: 2px solid #733ed7;
+    padding-bottom: 10px;/* Margen de la linea debajo de los titulos*/
+}
+
+h3{
+  color: rgb(203, 3, 3); /* Color del texto del encabezado */
+}
+ul {
+    list-style-type: square;
+    padding-left: 20px;/*viñetas*/
+}   
+
+table {
+    width: 100%; /* Hace que la tabla ocupe todo el ancho de la página */
+    margin: 20px 0; /* Márgenes de la tabla */
+    border-collapse: collapse; /* Elimina espacios entre bordes */
+}
+
+th, td {
+    padding: 5px; /* Relleno dentro de las celdas */
+    text-align: left; /* Alinear el texto a la izquierda */
+    border: 3px solid rgb(204, 200, 200); /* Bordes de las celdas */
+}
+
+th {
+    background-color: blanchedalmond; /* Fondo para el encabezado */
+    color: rgb(194, 46, 46); /* Color del texto del encabezado */
+}
+
+tr:hover {
+    background-color: rgb(205, 250, 255); /* Cambia el fondo de las celdas al pasar el mouse */
+}
+.name {
+    width: 100%;
+    height: 230px;
+    background: #ffd000;
+    transform: skewY(-2deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px; /*Espacio de titulo principal*/
+  }
+  .name .content {
+    width: 50%;
+    height: 50%;
+    text-align: center;/*formato de texto del titulo principal, alinear y ancho y altura*/
+  }
+  .name .content .p-1 {
+    color: #000000;
+    font-family: 'Baloo Tamma 2', sans-serif;
+    font-weight: bolder;
+    font-size: 50px;
+    margin: 0;
+    transform: skewY(-2deg);/*color de la letra de titulo principal*/
+  }
+  .name .content .p-2 {
+    color: #4d14bd;
+    font-family: 'Baloo Tamma 2', sans-serif;
+    font-size: 35px;
+    margin: 0;
+    transform: skewY(-2deg);/*color de la letra de titulo principal*/
+
+  }
+  .name .img{
+    position: absolute;
+    top: 18%;
+    right: 5%;
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    transform: skewY(5deg);
+    overflow: hidden;
+  }
+  .name .img img{
+    width: 180px;
+    height: 240px;/*imagen principal*/
+  }
+  .tablacontainer {
+    max-width: 400px;
+    margin: auto;
+    padding: 0px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);/*tabla donde se inserto imagen*/
+}
+  .tablacontainer .imagen{
+    top: 50%;
+    right: -25%;
+    width: 170px;
+    height: 170px;/* cuadrado de la imagen*/
+  }
+  .tablacontainer .imagen img{
+    width: 176px;
+    height: 175px;/*escala de la imagen*/
+  }
+  form {
+    text-align: center; /* Centra el formulario de contacto*/
+  }
+p{
+text-align: center; /* Centra el texto de todo el cuerpo */
+}
+h2::before {
+  content: "★";  
+  color: #ffd000; 
+  font-size: 1.2em; 
+  margin-right: 8px;
+}
+h2 {
+  font-size: 36px;/*Maquina de escribir*/
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0; /* Oculta el texto */
+  animation: escribir 3s steps(30, end) infinite;
+}
+
+@keyframes escribir {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+img {
+  font-size: 10px;/*Tipo zoom*/
+  animation: zoom 5s infinite;
+}
+
+@keyframes zoom {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+.p-1,.p-2{
+  font-size: 10px;/*Tipo zoom*/
+  animation: zoom 5s infinite;
+}
+
+@keyframes zoom {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
